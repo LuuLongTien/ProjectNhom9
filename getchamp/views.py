@@ -254,7 +254,7 @@ def Meta(request):
         return render(request, 'getchamp/profile2.html', {'user':depth})
     return render(request, 'getchamp/meta.html')
 
-
+# trang item
 @login_required(login_url='login')
 def ItemShow(request):
     post = Item.objects.all()
