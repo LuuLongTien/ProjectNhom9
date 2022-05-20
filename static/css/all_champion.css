@@ -16,6 +16,7 @@ body{
    border: 1px solid #17313a;
     
 }
+/*thanh search*/
 .search{
     background-color: #2d2b56;
     width: 270px;
@@ -27,11 +28,11 @@ body{
     border-radius: 5px;
 }
 .colum2{
-    /* text-align: center; */
+    
     padding-right: 68px;
     margin-top: 20px;
 }
-
+/*css all btn*/
 .btn{
     width: 59px;
     height: 29px;
@@ -54,7 +55,7 @@ body{
 }
 
 
-
+/*css all img*/
 .img--class{
     cursor: pointer;
     background-color: #2d2b56;
