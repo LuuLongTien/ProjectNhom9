@@ -23,6 +23,7 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.contrib.auth.models import User
 
+#chuc nang dang ky
 def Register(request):
     if request.user.is_authenticated:
         return redirect('search')
