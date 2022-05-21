@@ -315,6 +315,7 @@ def UserProfile(request):
 @login_required(login_url='login')
 def LinhThu(request):
     anyone = User.objects.all()
+    #tim kiem va hien thi user
     if 'search' in request.GET:
         a = request.GET['search']
         anyone = User.objects.filter(username__icontains = a)
