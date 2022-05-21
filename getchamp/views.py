@@ -38,7 +38,7 @@ def Register(request):
                 return redirect('login')
         return render(request, 'getchamp/register.html',{'form': form})
 
-
+#chuc nang dang nhap
 def Login(request):
     if request.user.is_authenticated:
         return redirect('search')
