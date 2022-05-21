@@ -182,7 +182,7 @@ def TeamName(request):
         return redirect('/app/teambuild')
     return render(request, 'getchamp/create_team_name.html')
 
-
+# trang chu
 def index(request):
     anyone = User.objects.all()
     if 'search' in request.GET:
