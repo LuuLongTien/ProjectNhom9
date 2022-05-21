@@ -152,7 +152,7 @@ class APIChampion(viewsets.ModelViewSet):
     queryset = Champion.objects.filter()
     serializer_class = ChampionSerializer
 
-#hien thong tin ve tuong khi click vao
+#Hien thong tin ve tuong khi click vao
 @login_required(login_url='login')
 def ChampionInfo(request):
     info = request.GET['xname']
