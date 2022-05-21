@@ -257,6 +257,7 @@ def Meta(request):
     return render(request, 'getchamp/meta.html')
 
 # trang item
+#chuc nang hien thi, tim kiem, loc
 @login_required(login_url='login')
 def ItemShow(request):
     post = Item.objects.all()
