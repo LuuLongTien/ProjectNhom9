@@ -109,7 +109,7 @@ def SearchBar(request):
 
     return render(request, 'getchamp/all_champion.html',{'post': post})
 
-
+#rejected
 @login_required(login_url='login')
 def TeamBuilding(request):
     #Search by name
@@ -147,7 +147,7 @@ def TeamBuilding(request):
     return render(request, 'getchamp/teambuilder.html',{'post': post, 'team': team,'tem':tem})
 
 #API
-
+#rejected
 class APIChampion(viewsets.ModelViewSet):
     queryset = Champion.objects.filter()
     serializer_class = ChampionSerializer
