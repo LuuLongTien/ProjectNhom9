@@ -281,7 +281,7 @@ def ItemShow(request):
         depth = User.objects.filter(username = b)
         return render(request, 'getchamp/profile2.html', {'user':depth})
     return render(request, 'getchamp/item.html',{'post':post})
-
+#thong tin nguoi dung
 @login_required(login_url='login')
 def UserInfo(request):
     anyone = User.objects.all()
