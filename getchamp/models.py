@@ -6,7 +6,9 @@ from django.db import models
 from django.forms import CharField
 
 # Create your models here.
+#cac model
 
+#rejected
 class User(models.Model):
     Username = models.CharField(max_length=50, default='Your username')
     Password = models.CharField(max_length=100, blank = False, null = False)
@@ -15,11 +17,13 @@ class User(models.Model):
     def __str__(self):
         return self.Username
 
+#rejected
 class TeamBuilder(models.Model):
     Player = models.ForeignKey(User, on_delete=models.CASCADE)
     TeamName = models.CharField(max_length = 50)
     def __str__(self):
         return self.TeamName
+
 
 class Champion(models.Model):
     Team = models.ManyToManyField(TeamBuilder)
