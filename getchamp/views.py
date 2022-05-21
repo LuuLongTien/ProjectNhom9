@@ -170,6 +170,7 @@ def ChampionInfo(request):
 
 
 #Tao team name
+#rejected
 @login_required(login_url='login')
 def TeamName(request):
     if 'text' in request.GET:
