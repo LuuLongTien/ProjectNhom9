@@ -58,7 +58,7 @@ def Login(request):
 def Logout(request):
     logout(request)
     return redirect('login')
-
+#testing purpose
 def ImageTest(request):
     q = Item.objects.all()
     if 'a' in request.GET:
@@ -67,7 +67,7 @@ def ImageTest(request):
     else:
         post = Champion.objects.all()
     return render(request, 'getchamp/index.html', {'q':q})
-
+#chuc nang tim kiem tuong
 @login_required(login_url='login')
 def SearchBar(request):
     #Search by name
