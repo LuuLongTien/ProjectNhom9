@@ -54,7 +54,7 @@ def Login(request):
                 messages.info(request, 'Username or Password is incorrect')
         context = {}
         return render(request, 'getchamp/login.html',context)
-
+#dang xuat
 def Logout(request):
     logout(request)
     return redirect('login')
