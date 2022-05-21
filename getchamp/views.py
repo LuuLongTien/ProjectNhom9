@@ -197,8 +197,8 @@ def index(request):
 # def Base(request):
 #     return render(request, 'getchamp/base.html')
 
-# trang he tocfff
-
+# trang he toc
+#chuc nang hien thi cho trang he toc
 @login_required(login_url='login')
 def MainPage(request):
     thachdau = Champion.objects.filter(Class = 'Challenger')
