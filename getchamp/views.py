@@ -324,7 +324,7 @@ def LinhThu(request):
         depth = User.objects.filter(username = b)
         return render(request, 'getchamp/profile2.html', {'user':depth})
     return render(request, 'getchamp/linhthu.html')
-
+# chinh sua thong tin user
 @login_required(login_url='login')
 def UserFix(request):
     if request.method ==  'POST':
